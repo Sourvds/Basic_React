@@ -1,0 +1,90 @@
+/* Home.css */
+
+#t_out {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Makes table scrollable on small screens */
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: rgb(245, 243, 243);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#table th {
+  background: #45a548;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+#table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #eaf5ea;
+  transition: 0.2s;
+}
+
+/* Action buttons */
+.actionbtn {
+  display: flex;
+  gap: 10px;
+}
+
+.actionbtn a,
+.actionbtn button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Read link */
+.actionbtn a {
+  background: #007bff;
+  color: white;
+}
+
+.actionbtn a:hover {
+  background: #0056b3;
+}
+
+/* Edit button */
+.actionbtn button:nth-child(2) {
+  background: #ffc107;
+  color: black;
+}
+
+.actionbtn button:nth-child(2):hover {
+  background: #e0a800;
+}
+
+/* Delete button */
+.actionbtn button:nth-child(3) {
+  background: #dc3545;
+  color: white;
+}
+
+.actionbtn button:nth-child(3):hover {
+  background: #a71d2a;
+}
